@@ -1,0 +1,37 @@
+Build a polished, responsive, single-page CSD onboarding website using the attached project files and csd-website-data.json.
+
+PRIMARY AUDIENCE
+New and existing CSD team members who need to understand the department's service ecosystem and workflows. Keep the student experience at the centre because students are directly affected by CSD communication and coordination.
+
+DESIGN DIRECTION
+- Light mode by default; warm ivory background (#F7F4EE), paper-white surfaces (#FFFEFB), charcoal text (#292B29), muted burgundy (#774650), terracotta (#B66E53), sage (#718572), subtle border (#E5DFD5).
+- Poppins for body text and Sora for headings (Manrope is an acceptable alternative if needed).
+- Editorial, professional, spacious, sophisticated, visual-first. It must not resemble a generic dashboard, admin portal, or software management interface.
+- Large section numbers, confident typography, fine dividers, restrained soft shadows, diagram-led storytelling, clear hierarchy, concise copy.
+- Use tasteful micro-interactions, scroll reveals, SVG line drawing, and subtle parallax only where it supports understanding. Respect prefers-reduced-motion.
+
+PAGE STRUCTURE
+Implement all ten sections in the order in the dataset: Welcome; CSD Ecosystem; Roles & Responsibilities; CSD Operational Process; Stakeholder Guide; Information & Tools; Communication Protocols; Student Placement Journey; Scenario Simulator; First-Week Checklist.
+CSD Operational Process and Student Placement Journey must be separate, full-width sections.
+Add a slim scroll progress indicator and unobtrusive section navigation.
+
+INTERACTIONS
+- Actor map: clickable actors; highlight selected actor and verified connections; show concise role details.
+- Role cards: expand or open a detail panel.
+- CSD process: select a stage to reveal purpose, handoff, relevant actors when verified, and student impact.
+- Student journey: select a stage to reveal student action, touchpoints, possible emotions, and support needs.
+- Scenario simulator: select a scenario and reveal the situation, consideration prompt, and illustrative response.
+- First-week checklist: functional checkboxes and a visible completion count.
+- All buttons must do something meaningful. No fake buttons or dead links.
+
+ACCURACY / CONTENT
+Use the project files and JSON as the source of truth. Do not invent official policies, metrics, placement rates, response-time commitments, deadlines, or unsupported relationships. Mark scenario responses as illustrative rather than official policy. If something is uncertain, label it for CSD confirmation.
+CRITICAL: Do not include Alumni anywhere in the actor map or stakeholder network. The actors are CSD Team at the centre plus Students, SPOCs, HODs, Faculty/Mentors, Companies/Recruiters, and Placement Leadership. Do not draw map connections until verified from the supplied map or research; use placeholders for missing edges.
+
+TECHNICAL EXPECTATIONS
+Use the React + TypeScript structure supported by this workspace. Keep content in the JSON dataset rather than duplicating long copy in components. Build reusable components for section headings, role cards, process stages, journey stages, scenario panels, and checklist items. Use SVG for diagram connections where appropriate. Use a lightweight animation library only if it is supported by the environment; otherwise use CSS transitions and Intersection Observer. Avoid unnecessary dependencies.
+Ensure responsive desktop, tablet and mobile layouts, semantic headings, keyboard access, visible focus states, adequate contrast, reduced-motion support, and readable content without animation.
+Do not leave placeholder text in non-diagram content. For diagrams, use clearly labelled placeholder components if source maps have not yet been supplied.
+
+DELIVERY
+First inspect available files and the existing project structure. Then implement the complete first version, run/build-check it if tools are available, fix errors, and provide a concise summary of what was implemented and which map assets are still needed.

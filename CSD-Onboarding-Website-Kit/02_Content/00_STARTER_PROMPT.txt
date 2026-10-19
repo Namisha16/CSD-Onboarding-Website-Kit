@@ -1,0 +1,1 @@
+Use the CSD-Onboarding-Website project folder as the source of truth for all research, content, design guidelines, visual assets, and technical requirements. Build the website according to the specifications in those files.
