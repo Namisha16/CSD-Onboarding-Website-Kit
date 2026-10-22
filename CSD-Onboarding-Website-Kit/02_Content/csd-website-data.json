@@ -51,16 +51,26 @@
       "interaction": "Scroll to explore"
     },
     {
-      "id": "ecosystem",
+      "id": "actors-map",
       "number": "02",
-      "title": "The CSD Ecosystem",
-      "description": "Explore the people and groups involved in the service.",
-      "visual": "Interactive actor map",
+      "title": "Actors Map",
+      "eyebrow": "System Participants & Connections",
+      "description": "Who is involved in the CSD system, and how do the different actors connect?",
+      "visual": "Full-width landscape actor map",
+      "interaction": "Awaiting verified research visual"
+    },
+    {
+      "id": "ecosystem",
+      "number": "03",
+      "title": "CSD Ecosystem Map",
+      "eyebrow": "Ecosystem Architecture & Flow",
+      "description": "Explore the broader CSD ecosystem and how its different parts, structures and information flows relate to one another.",
+      "visual": "Ecosystem structure and actor directory",
       "interaction": "Select an actor to highlight documented connections"
     },
     {
       "id": "roles",
-      "number": "03",
+      "number": "04",
       "title": "Roles & Responsibilities",
       "description": "Understand who contributes, what information they provide and where coordination matters.",
       "visual": "Clickable role cards",
@@ -68,7 +78,7 @@
     },
     {
       "id": "csd-process",
-      "number": "04",
+      "number": "05",
       "title": "How CSD Operates",
       "description": "Follow the operational process from company relationships to joining and closure.",
       "visual": "Full-width interactive process map",
@@ -76,7 +86,7 @@
     },
     {
       "id": "stakeholders",
-      "number": "05",
+      "number": "06",
       "title": "Working with Stakeholders",
       "description": "Understand the different perspectives and information needs involved in coordination.",
       "visual": "Stakeholder guide",
@@ -84,7 +94,7 @@
     },
     {
       "id": "information-tools",
-      "number": "06",
+      "number": "07",
       "title": "Information & Tools",
       "description": "Explore the information needed to support relevant opportunities and student coordination.",
       "visual": "Information flow and touchpoint cards",
@@ -92,7 +102,7 @@
     },
     {
       "id": "communication",
-      "number": "07",
+      "number": "08",
       "title": "Communication that Connects",
       "description": "Use clear, structured communication to reduce uncertainty and support coordination.",
       "visual": "Communication principles",
@@ -100,7 +110,7 @@
     },
     {
       "id": "student-journey",
-      "number": "08",
+      "number": "09",
       "title": "The Student Placement Journey",
       "description": "Follow the student's experience from an opportunity announcement to joining.",
       "visual": "Separate full-width student journey map",
@@ -108,7 +118,7 @@
     },
     {
       "id": "scenario-simulator",
-      "number": "09",
+      "number": "10",
       "title": "What Would You Do?",
       "description": "Explore illustrative situations and consider appropriate coordination responses.",
       "visual": "Interactive scenario simulator",
@@ -116,7 +126,7 @@
     },
     {
       "id": "first-week",
-      "number": "10",
+      "number": "11",
       "title": "Your First Week",
       "description": "Use a practical checklist to orient yourself to the CSD ecosystem and ways of working.",
       "visual": "Interactive checklist",

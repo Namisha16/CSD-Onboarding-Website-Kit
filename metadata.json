@@ -1,0 +1,8 @@
+{
+  "name": "CSD Onboarding",
+  "description": "Interactive onboarding portal for CSD team members exploring the service ecosystem, operational workflows, and student placement journey.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

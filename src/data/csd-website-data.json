@@ -1,0 +1,513 @@
+{
+  "project": {
+    "name": "CSD Onboarding",
+    "subtitle": "A clearer journey, a better experience.",
+    "purpose": "Help CSD team members understand the service ecosystem, operational workflow, stakeholder responsibilities and student placement journey.",
+    "audience": [
+      "New CSD team members",
+      "Existing CSD team members seeking a shared overview"
+    ],
+    "designPrinciple": "Design for CSD onboarding while keeping the student experience at the centre.",
+    "theme": "light",
+    "sourcePolicy": "Use supplied project research as the source of truth. Do not invent official policies, metrics, deadlines, or unsupported stakeholder relationships."
+  },
+  "design": {
+    "fonts": {
+      "heading": "Sora",
+      "body": "Poppins"
+    },
+    "colors": {
+      "background": "#F7F4EE",
+      "surface": "#FFFEFB",
+      "text": "#292B29",
+      "muted": "#706F69",
+      "primary": "#774650",
+      "secondary": "#B66E53",
+      "support": "#718572",
+      "border": "#E5DFD5"
+    },
+    "layout": {
+      "type": "single-scroll editorial",
+      "desktopGrid": 12,
+      "mobile": "single column",
+      "contentDensity": "low to moderate"
+    },
+    "motion": {
+      "scrollReveal": true,
+      "progressiveLines": true,
+      "microInteractions": true,
+      "subtleParallax": true,
+      "respectReducedMotion": true
+    }
+  },
+  "sections": [
+    {
+      "id": "welcome",
+      "number": "01",
+      "title": "Welcome to CSD",
+      "eyebrow": "People, opportunities, connections",
+      "description": "Understand how CSD connects students, academic stakeholders and recruiting organisations through the placement journey.",
+      "visual": "Editorial hero with a connected-path illustration",
+      "interaction": "Scroll to explore"
+    },
+    {
+      "id": "actors-map",
+      "number": "02",
+      "title": "Actors Map",
+      "eyebrow": "System Participants & Connections",
+      "description": "Who is involved in the CSD system, their key responsibilities, and how the different actors connect.",
+      "visual": "Full-width landscape actor map",
+      "interaction": "Select a participant to inspect key responsibilities"
+    },
+    {
+      "id": "ecosystem",
+      "number": "03",
+      "title": "CSD Ecosystem Map",
+      "eyebrow": "Ecosystem Architecture & Flow",
+      "description": "Explore the broader CSD ecosystem and how its different parts, structures and information flows relate to one another.",
+      "visual": "Ecosystem structure and actor directory",
+      "interaction": "Select an actor to highlight documented connections"
+    },
+    {
+      "id": "csd-process",
+      "number": "04",
+      "title": "From Opportunity to Outcome",
+      "description": "Follow the operational process from company relationships to joining and closure.",
+      "visual": "Full-width interactive process map",
+      "interaction": "Select a stage to inspect its handoffs"
+    },
+    {
+      "id": "stakeholders",
+      "number": "05",
+      "title": "Working with Stakeholders",
+      "description": "Understand the different perspectives and information needs involved in coordination.",
+      "visual": "Stakeholder guide",
+      "interaction": "Explore each stakeholder group"
+    },
+    {
+      "id": "information-tools",
+      "number": "06",
+      "title": "Information & Tools",
+      "description": "Explore the information needed to support relevant opportunities and student coordination.",
+      "visual": "Information flow and touchpoint cards",
+      "interaction": "Select a touchpoint for details"
+    },
+    {
+      "id": "communication",
+      "number": "07",
+      "title": "Communication that Connects",
+      "description": "Use clear, structured communication to reduce uncertainty and support coordination.",
+      "visual": "Communication principles",
+      "interaction": "Reveal practical examples"
+    },
+    {
+      "id": "student-journey",
+      "number": "08",
+      "title": "The Student Placement Journey",
+      "description": "Follow the student's experience from an opportunity announcement to joining.",
+      "visual": "Separate full-width student journey map",
+      "interaction": "Explore actions, touchpoints and emotions at each stage"
+    },
+    {
+      "id": "scenario-simulator",
+      "number": "09",
+      "title": "What Would You Do?",
+      "description": "Explore illustrative situations and consider appropriate coordination responses.",
+      "visual": "Interactive scenario simulator",
+      "interaction": "Choose a scenario and reveal a considered response"
+    },
+    {
+      "id": "first-week",
+      "number": "10",
+      "title": "Your First Week",
+      "description": "Use a practical checklist to orient yourself to the CSD ecosystem and ways of working.",
+      "visual": "Interactive checklist",
+      "interaction": "Check off completed tasks"
+    }
+  ],
+  "actors": [
+    {
+      "id": "csd",
+      "name": "CSD Team",
+      "position": "centre",
+      "summary": "Coordinates placement activities, opportunity communication, student information and follow-through."
+    },
+    {
+      "id": "students",
+      "name": "Students",
+      "summary": "Provide accurate profiles and preferences, review opportunities, apply and participate in selection activities."
+    },
+    {
+      "id": "spocs",
+      "name": "SPOCs",
+      "summary": "Connect CSD with students and academic context, and support information collection and candidate identification."
+    },
+    {
+      "id": "hods",
+      "name": "HODs",
+      "summary": "Provide programme context and help assess academic fit and suitability."
+    },
+    {
+      "id": "faculty",
+      "name": "Faculty / Mentors",
+      "summary": "Support student readiness through portfolio, skills and project guidance."
+    },
+    {
+      "id": "companies",
+      "name": "Companies / Recruiters",
+      "summary": "Share role requirements and participate in shortlisting, selection and outcome communication."
+    },
+    {
+      "id": "leadership",
+      "name": "Placement Leadership",
+      "summary": "Provides oversight and coordination where applicable; confirm specific responsibilities with the department."
+    }
+  ],
+  "actorMap": {
+    "centerActorId": "csd",
+    "actorIds": [
+      "students",
+      "spocs",
+      "hods",
+      "faculty",
+      "companies",
+      "leadership"
+    ],
+    "edges": [],
+    "note": "Edges are intentionally empty. Add only connections verified against the user's actual actor map/research. Do not invent links. Alumni must not appear anywhere in the actor map or stakeholder network."
+  },
+  "roles": [
+    {
+      "actorId": "csd",
+      "responsibilities": [
+        "Coordinate placement activities and company communication",
+        "Collect and maintain relevant student and opportunity information",
+        "Support matching, application coordination, updates and outcome records"
+      ],
+      "confirmWithTeam": "Confirm current ownership, procedures and approval points with CSD."
+    },
+    {
+      "actorId": "students",
+      "responsibilities": [
+        "Maintain accurate profile, CV and portfolio information",
+        "Share preferences and availability as requested",
+        "Review opportunities and complete application or selection steps"
+      ],
+      "confirmWithTeam": "Use current official instructions for deadlines and submission requirements."
+    },
+    {
+      "actorId": "spocs",
+      "responsibilities": [
+        "Connect CSD with students and academic context",
+        "Support information collection",
+        "Help identify potentially suitable candidates"
+      ],
+      "confirmWithTeam": "Confirm the current SPOC remit and communication route."
+    },
+    {
+      "actorId": "hods",
+      "responsibilities": [
+        "Provide programme context",
+        "Help clarify academic fit and suitability where relevant"
+      ],
+      "confirmWithTeam": "Confirm specific decision-making responsibilities with the department."
+    },
+    {
+      "actorId": "faculty",
+      "responsibilities": [
+        "Support portfolio and skills development",
+        "Help students reflect on project experience and readiness"
+      ],
+      "confirmWithTeam": "Treat this as a general support role, not a formal selection policy."
+    },
+    {
+      "actorId": "companies",
+      "responsibilities": [
+        "Share job descriptions and role requirements",
+        "Participate in shortlisting and selection",
+        "Communicate selection outcomes through the agreed contact"
+      ],
+      "confirmWithTeam": "Do not imply a company response time unless it is documented."
+    },
+    {
+      "actorId": "leadership",
+      "responsibilities": [
+        "Provide oversight and coordination where applicable"
+      ],
+      "confirmWithTeam": "Specific duties require confirmation; do not infer formal authority."
+    }
+  ],
+  "csdProcess": [
+    {
+      "id": 1,
+      "title": "Build company relationships",
+      "purpose": "Develop connections with recruiting organisations.",
+      "handoff": "Company relationship to opportunity discussion"
+    },
+    {
+      "id": 2,
+      "title": "Gather student information",
+      "purpose": "Collect profiles, preferences, skills and availability.",
+      "handoff": "Student information to CSD"
+    },
+    {
+      "id": 3,
+      "title": "Receive the job description",
+      "purpose": "Understand the role, requirements and opportunity details.",
+      "handoff": "Role requirements to CSD"
+    },
+    {
+      "id": 4,
+      "title": "Match suitable students",
+      "purpose": "Compare role requirements with student profiles and preferences.",
+      "handoff": "Potential candidates for coordination"
+    },
+    {
+      "id": 5,
+      "title": "Share and coordinate applications",
+      "purpose": "Communicate the opportunity and coordinate student applications.",
+      "handoff": "Application information to recruiting organisation"
+    },
+    {
+      "id": 6,
+      "title": "Track selection",
+      "purpose": "Coordinate and record shortlist and selection updates.",
+      "handoff": "Selection updates to relevant stakeholders"
+    },
+    {
+      "id": 7,
+      "title": "Communicate outcomes",
+      "purpose": "Share confirmed outcomes with relevant people.",
+      "handoff": "Outcome information to students and stakeholders"
+    },
+    {
+      "id": 8,
+      "title": "Confirm joining and close the loop",
+      "purpose": "Coordinate joining information and complete relevant follow-through.",
+      "handoff": "Joining confirmation and records"
+    }
+  ],
+  "studentJourney": [
+    {
+      "id": 1,
+      "stage": "Opportunity announced",
+      "studentAction": "Review the opportunity and job description.",
+      "touchpoints": [
+        "Opportunity announcement",
+        "Email or shared communication"
+      ],
+      "possibleEmotion": [
+        "Excitement",
+        "Hope",
+        "Uncertainty"
+      ],
+      "supportNeed": "Clear role details, eligibility and next steps"
+    },
+    {
+      "id": 2,
+      "stage": "Application",
+      "studentAction": "Decide whether to apply and submit the requested CV or portfolio.",
+      "touchpoints": [
+        "Job description",
+        "Application form",
+        "CV",
+        "Portfolio"
+      ],
+      "possibleEmotion": [
+        "Motivation",
+        "Pressure"
+      ],
+      "supportNeed": "Clear requirements, submission instructions and deadlines"
+    },
+    {
+      "id": 3,
+      "stage": "Waiting for results",
+      "studentAction": "Wait for updates and respond if further information is requested.",
+      "touchpoints": [
+        "Email",
+        "CSD communication"
+      ],
+      "possibleEmotion": [
+        "Hope",
+        "Anxiety",
+        "Impatience"
+      ],
+      "supportNeed": "Clarity on known status and next steps"
+    },
+    {
+      "id": 4,
+      "stage": "Assignment",
+      "studentAction": "Review and complete the assignment when required.",
+      "touchpoints": [
+        "Assignment brief",
+        "Submission instructions"
+      ],
+      "possibleEmotion": [
+        "Focus",
+        "Stress"
+      ],
+      "supportNeed": "Clear scope, instructions and submission information"
+    },
+    {
+      "id": 5,
+      "stage": "Interview",
+      "studentAction": "Prepare, attend and communicate about scheduling.",
+      "touchpoints": [
+        "Interview invitation",
+        "Scheduling communication"
+      ],
+      "possibleEmotion": [
+        "Nervousness",
+        "Anticipation"
+      ],
+      "supportNeed": "Accurate scheduling and clear interview details"
+    },
+    {
+      "id": 6,
+      "stage": "Confirmation",
+      "studentAction": "Review the outcome and any offer information.",
+      "touchpoints": [
+        "Confirmation communication",
+        "Offer letter where applicable"
+      ],
+      "possibleEmotion": [
+        "Relief",
+        "Excitement",
+        "Uncertainty"
+      ],
+      "supportNeed": "Clear, confirmed outcome and next steps"
+    },
+    {
+      "id": 7,
+      "stage": "Joining",
+      "studentAction": "Complete the relevant joining steps.",
+      "touchpoints": [
+        "Joining instructions",
+        "Recruiter or onboarding communication"
+      ],
+      "possibleEmotion": [
+        "Excitement",
+        "Anticipation"
+      ],
+      "supportNeed": "Clear joining details and contact points"
+    }
+  ],
+  "informationTools": [
+    {
+      "id": "student-profile",
+      "name": "Student Profile",
+      "purpose": "Help CSD understand a student's skills, project experience, preferences and availability."
+    },
+    {
+      "id": "prep-som",
+      "name": "PREP SOM",
+      "purpose": "A student information touchpoint used to capture relevant profile and opportunity preferences.",
+      "note": "It supports information collection; it does not replace direct communication."
+    },
+    {
+      "id": "job-description",
+      "name": "Job Description",
+      "purpose": "Communicate role requirements so students and CSD can assess relevance."
+    },
+    {
+      "id": "portfolio",
+      "name": "CV and Portfolio",
+      "purpose": "Present student experience, skills and work for application and selection."
+    },
+    {
+      "id": "updates",
+      "name": "Status and Updates",
+      "purpose": "Keep relevant stakeholders informed of confirmed changes and next steps."
+    }
+  ],
+  "communicationPrinciples": [
+    {
+      "title": "Be clear",
+      "description": "State the opportunity, required action, relevant date and next step."
+    },
+    {
+      "title": "Be structured",
+      "description": "Use consistent information formats so essential details are easy to find."
+    },
+    {
+      "title": "Be timely",
+      "description": "Share confirmed updates when available and flag changes clearly."
+    },
+    {
+      "title": "Be transparent",
+      "description": "Distinguish confirmed information from pending decisions."
+    },
+    {
+      "title": "Clarify ownership",
+      "description": "Make the next action and responsible contact clear wherever known."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "incomplete-profile",
+      "title": "A student profile is incomplete",
+      "situation": "The information needed to assess a student against a role is missing.",
+      "consider": "Which information is missing, who can confirm it, and when is it needed?",
+      "response": "Identify the specific gap, request the missing information from the appropriate person, and avoid assuming suitability until the information is confirmed.",
+      "type": "Illustrative response, not official policy"
+    },
+    {
+      "id": "company-delay",
+      "title": "A company has not responded",
+      "situation": "The selection outcome is still pending.",
+      "consider": "What is confirmed, what remains unknown, and who needs an update?",
+      "response": "Verify the latest known status, coordinate a follow-up through the appropriate contact, and communicate the uncertainty honestly without promising an unconfirmed date.",
+      "type": "Illustrative response, not official policy"
+    },
+    {
+      "id": "opportunity-mismatch",
+      "title": "A role may not fit a student's profile",
+      "situation": "The role requirements and student information do not appear to align.",
+      "consider": "Which requirements are essential, and what evidence supports the assessment?",
+      "response": "Compare the documented role requirements with the student's profile and seek clarification from the relevant stakeholders before making assumptions.",
+      "type": "Illustrative response, not official policy"
+    },
+    {
+      "id": "deadline-confusion",
+      "title": "A student has missed an update",
+      "situation": "A student may not have noticed an opportunity or deadline.",
+      "consider": "Was the information clear, accessible and shared through the intended channel?",
+      "response": "Check the original communication and confirmed deadline, clarify the situation with the appropriate contact, and identify whether communication can be made clearer next time.",
+      "type": "Illustrative response, not official policy"
+    }
+  ],
+  "firstWeekChecklist": [
+    {
+      "id": "ecosystem",
+      "task": "Understand the CSD ecosystem and key stakeholders"
+    },
+    {
+      "id": "roles",
+      "task": "Review role boundaries and coordination responsibilities"
+    },
+    {
+      "id": "workflow",
+      "task": "Walk through the CSD operational process"
+    },
+    {
+      "id": "student-journey",
+      "task": "Understand the student placement journey and its pressure points"
+    },
+    {
+      "id": "tools",
+      "task": "Learn the purpose of key information tools and touchpoints"
+    },
+    {
+      "id": "communication",
+      "task": "Review communication principles and existing department guidance"
+    },
+    {
+      "id": "confirm",
+      "task": "Confirm unclear responsibilities and current procedures with the team"
+    }
+  ],
+  "footer": {
+    "message": "Clearer coordination. Better-informed students. A more navigable placement journey.",
+    "note": "This onboarding resource is based on project research. Confirm current procedures with the CSD team."
+  }
+}
