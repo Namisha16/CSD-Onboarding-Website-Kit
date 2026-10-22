@@ -86,7 +86,7 @@ export function App() {
             onStartOnboarding={() => scrollToSection('first-week')}
           />
 
-          {/* Section 02: Actors Map (The People Behind the Placement Journey with Key Responsibilities) */}
+          {/* Section 02: The People Behind the Placement Journey (System Participants & Actors Map) */}
           <ActorsMapSection
             section={csdData.sections[1]}
             onOpenMapGuide={() => setIsMapModalOpen(true)}

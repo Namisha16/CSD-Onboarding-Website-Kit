@@ -209,7 +209,7 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({
                     Navigation
                   </span>
                   <span className="text-[11px] text-[#5F6876] block">
-                    11 Sections
+                    10 Sections
                   </span>
                 </div>
               </div>
@@ -315,7 +315,7 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({
         {/* Navigation Item Links (Scrollable if height constrained) */}
         <nav className="flex-1 overflow-y-auto px-2.5 py-3 space-y-0.5" aria-label="Section navigation">
           <div className="px-2.5 py-1 text-[11px] text-[#5F6876] font-medium">
-            Sections (11)
+            Sections (10)
           </div>
 
           {navItems.map((item) => {

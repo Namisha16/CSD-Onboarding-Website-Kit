@@ -31,6 +31,8 @@ export const CsdProcessSection: React.FC<CsdProcessSectionProps> = ({
   const [hasError, setHasError] = useState(false);
   const [imgKey, setImgKey] = useState(0);
 
+  const imageSrc = '/assets/process-map.png';
+
   const activeStage = stages.find((s) => s.id === selectedStageId) || stages[0];
 
   useEffect(() => {
@@ -207,7 +209,7 @@ export const CsdProcessSection: React.FC<CsdProcessSectionProps> = ({
 
             <div className="flex items-center gap-3">
               <a
-                href="/assets/process-map.png"
+                href={imageSrc}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden md:inline-flex items-center gap-1 text-[#5F6876] hover:text-[#16181D] text-xs py-0.5 px-2 rounded-xs hover:bg-[#EAEAEA] transition-colors"
@@ -259,9 +261,10 @@ export const CsdProcessSection: React.FC<CsdProcessSectionProps> = ({
             ) : (
               <img
                 key={imgKey}
-                src="/assets/process-map.png"
+                src={imageSrc}
                 alt="CSD Operational Process Map — Workflow from company relationship to student joining"
-                className="w-full h-auto block object-contain max-h-[80vh]"
+                className="w-full h-auto block object-contain max-h-[85vh] mx-auto"
+                style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
                 loading="eager"
                 onError={() => setHasError(true)}
               />
@@ -303,7 +306,7 @@ export const CsdProcessSection: React.FC<CsdProcessSectionProps> = ({
 
             <div className="flex items-center gap-2">
               <a
-                href="/assets/process-map.png"
+                href={imageSrc}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden sm:inline-flex items-center gap-1 text-xs text-[#5F6876] hover:text-[#16181D] px-2.5 py-1 rounded-xs border border-[#E2E5EB]"
@@ -354,9 +357,10 @@ export const CsdProcessSection: React.FC<CsdProcessSectionProps> = ({
           <div className="flex-1 overflow-auto p-4 sm:p-6 flex items-center justify-center">
             <div style={{ transform: `scale(${zoomLevel})` }} className="transition-transform duration-150 origin-center">
               <img
-                src="/assets/process-map.png"
+                src={imageSrc}
                 alt="CSD Operational Process Map Full View"
                 className="max-w-[95vw] h-auto object-contain bg-[#FFFFFF] rounded-xs shadow-xl p-4"
+                style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
               />
             </div>
           </div>
